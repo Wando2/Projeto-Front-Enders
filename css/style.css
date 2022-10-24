@@ -3,8 +3,9 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #0B0045;
-  
+background: #0B0045;  
+
+
 }
 
 
@@ -337,20 +338,23 @@ margin-left: 100px;
 		text-align: center;
 	}
 
+	.row-footer{
+		flex-direction: column;
+	
+	  }
+	  .info-footer-redes-socias{
+		margin-left: 0;
+	  }
+
 }
 
 /* Serviços - Produtos */
-.cont-main{
-    
-  }
 
 #frase1{
     color: #fff;
   }
 
-  .cont-main{
-   
-  }
+ 
 
  .cont-main h1, .cont-main h4 {
   color: #8a0124;
@@ -509,4 +513,290 @@ box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
 }
   
 .overflow-hidden { overflow: hidden; }
+
+/* CONTATO ----------------------- */
+
+/* FORM */
+
+/*LISTA DE CADASTRO */
+
+/*-----------------------COMEÇO DO FORMULÁRIO----------------------*/
+
+
+
+#checkout-page{
+    background-color: #0b0045;
+    color: #ff1a1a;
+}
+
+/*mensagem*/
+
+#fade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+#fade .spinner-border{
+    width: 60px;
+    height: 60px;
+}
+
+.hide{
+    display: none !important;
+}
+
+#message{
+    width: 40%;
+}
+
+.alert.alert-light p{
+    color: #333;
+    border-bottom: 1px solid #333;
+    padding: 1.2em 0;
+}
+
+#order-form-container{
+    padding: 1.5em;
+    max-width: 700px;
+}
+
+#steps{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ff1a1a;
+    position: relative;
+}
+
+/*form header*/
+
+#form-header p{
+    color: #ff1a1a;
+}
+
+/*form*/
+
+#order-form-container input,
+#order-form-container select{
+    background-color: #514869;
+    border: 2px solid #514869;
+    color: #fff;
+
+}
+
+#order-form-container select{
+    padding: 1rem .75rem;
+}
+
+#order-form-container label{
+    color: #fff;
+    left: 1em;
+}
+
+#order-form-container input:focus{
+    border: none;
+}
+
+/*olhinho*/
+
+#icon{
+    position: absolute;
+    top: 22%;
+    right: 20px;
+    transform: translateY(10%);
+    background: url('../img/olhoaberto.png');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#icon.fechado{
+    background: url('../img/olhofechado.png');
+    background-size: cover;
+}
+
+
+#icon2{
+    position: absolute;
+    top: 22%;
+    right: 20px;
+    transform: translateY(10%);
+    background: url('../img/olhoaberto.png');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#icon2.fechado2{
+    background: url('../img/olhofechado.png');
+    background-size: cover;
+}
+
+.container.px-md-0{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+/*--------------Fim do Formulário-------------*/
+
+/*--------------Começo do Login------------------*/
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background: #0b0045;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login{
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1{
+    font-size: 3vw;
+    color: #ff1a1a;
+}
+
+.left-login-img{
+    width: 30vw;
+}
+
+.right-login{
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login > h1{
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12px;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label{
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.formulario-cep .btn-login, .main-login .btn-login{
+    height: 48px;
+    width: 100%;
+    padding-left: 8px;
+    outline: none;
+    position: relative;
+    background: linear-gradient(120deg, #0b0045, #ff1a1a, #0b0045);
+    background-size: 200%;
+    margin-bottom: 32px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: unset;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.btn-login:hover {
+    background-position: right;
+}
+
+.formulario-cep a, .main-login a{
+    text-decoration: none;
+    color: #ff1a1a;
+}
+
+.formulario-cep p, .main-login p{
+    color: #fff;
+}
+
+@media only screen and (max-width: 950px){
+    .card-login{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login > h1{
+        display: none;
+    }
+    .left-login{
+        height: none;
+    }
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+    .left-login-image{
+        width: 50vw;
+    }
+    .card-login{
+        width: 90%;
+    }
+}
+
+/*--------------Fim do Login---------------------*/
+
+
 
